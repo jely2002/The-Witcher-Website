@@ -175,14 +175,14 @@ footer li {
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 610px) {
     nav {
         height: 91px;
         text-align: center;
     }
 
     nav a {
-        padding: .5rem 1rem .5rem 1rem;
+        padding: .5rem;
     }
 
     nav ul {
@@ -192,5 +192,6 @@ footer li {
 
     nav .title {
         margin: 1rem;
+        width: 100%;
     }
 }

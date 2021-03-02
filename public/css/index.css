@@ -44,6 +44,7 @@ body > header > section > img {
     z-index: 1;
     background-size: cover;
     border-radius: 3px;
+    margin: 0 auto;
 }
 
 .wrapper img {
@@ -270,10 +271,10 @@ article.games a:hover > img {
 
 @media only screen and (max-width: 600px) {
     .slide, .wrapper, .slider {
-        width: 350px;
+        width: 320px;
     }
     .slides {
-        left: -350px;
+        left: -320px;
     }
     #country.pill {
         margin-left: 0;

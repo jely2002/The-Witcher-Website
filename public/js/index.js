@@ -11,7 +11,7 @@ function slide(wrapper, items, prev, next) {
         threshold = 100,
         slides = items.getElementsByClassName('slide'),
         slidesLength = slides.length,
-        slideSize = window.matchMedia("(max-width: 600px)").matches ? 350 : 500,
+        slideSize = window.matchMedia("(max-width: 600px)").matches ? 320 : 500,
         firstSlide = slides[0],
         lastSlide = slides[slidesLength - 1],
         cloneFirst = firstSlide.cloneNode(true),
@@ -86,7 +86,7 @@ function slide(wrapper, items, prev, next) {
         let adjustedIndex = index + 1;
         if(index + 1 > slidesLength) adjustedIndex = 1;
         small = window.matchMedia("(max-width: 600px)").matches
-        slideSize = small ? 350 : 500;
+        slideSize = small ? 320 : 500;
         console.log(slideSize * adjustedIndex)
         items.style.left = -slideSize * adjustedIndex + "px";
     }
