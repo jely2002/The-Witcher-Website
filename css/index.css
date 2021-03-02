@@ -1,0 +1,263 @@
+body > header {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    font-family: 'thewitcher', sans-serif;
+    font-size: 350%;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 2px rgba(0,0,0,.7);
+    background: url("../img/banner.jpg") center center no-repeat fixed;
+    background-size: cover;
+    margin-bottom: 2rem;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+body > header > section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+body > header > section > h1 {
+    font-size: 4.5rem;
+}
+
+body > header > section > img {
+    filter: invert() drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.slider {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    list-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    height: 350px;
+    z-index: 1;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.wrapper img {
+    image-rendering: pixelated;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: -500px;
+    width: 10000px;
+    margin: 0;
+    padding: 0;
+}
+
+.slides.shifting {
+    transition: left 0.2s ease-out;
+}
+
+.slide {
+    width: 500px;
+    height: 350px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transition: all 1s;
+    position: relative;
+    background: transparent;
+    background-size: cover;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.slider.loaded {
+    background: #FFF;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.prev,
+.next {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+    left: 0;
+}
+
+.next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+    right: 0;
+}
+
+p.pill {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    margin: 0 1rem 1rem;
+}
+
+article.characters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 85%;
+}
+
+article {
+    padding: 1rem 1rem 3rem;
+}
+
+article.characters > *:nth-child(1) {
+    width: 100%;
+}
+
+.characters .info {
+    margin-left: 5rem;
+    flex: 1;
+}
+
+p.pill:first-of-type {
+    margin: 0 0 1rem;
+}
+
+article > header > h2 {
+    font-size: 250%;
+}
+
+article > header > small {
+    font-size: 150%;
+}
+
+article.characters > header, article.games > header {
+    margin-bottom: 3rem;
+}
+
+#name {
+    margin-bottom: 1rem;
+    font-size: 180%;
+}
+
+article.series {
+    background: url("../img/series-banner.png") center top no-repeat;
+    background-size: cover;
+    height: 300px;
+    filter: brightness(140%) saturate(150%);
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+article.series > header {
+    margin-left: 20%;
+    text-shadow: 1px 1px 0.5px rgba(0,0,0,.4);
+}
+
+article.series > header > h2 {
+    margin-bottom: .5rem;
+}
+
+article.series > header > button {
+    display: block;
+    margin-top: 1rem;
+    padding: .7rem;
+    background-color: rgba(0,0,0,.4);
+    color: #FFF;
+    border: 1px solid rgba(0,0,0,.7);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 110%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+article.series > header > button:hover {
+    background-color: rgba(0,0,0,.6);
+}
+
+#character-description {
+    font-size: 120%;
+}
+
+article.games > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+article.games li {
+    text-align: center;
+}
+
+article.games a {
+    color: #000;
+    text-decoration: none;
+}
+
+article.games {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1180px) {
+    .characters .info {
+        margin-left: 0;
+        width: 100%;
+        flex: unset;
+    }
+    .characters .slider {
+        margin: 0 auto 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide, .wrapper, .slider {
+        width: 350px;
+    }
+    .slides {
+        left: -350px;
+    }
+    #country.pill {
+        margin-left: 0;
+    }
+    article.series > header {
+        margin: 1rem;
+    }
+    article.series {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    body > header > section > h1 {
+        font-size: 3.5rem;
+    }
+}
