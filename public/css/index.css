@@ -249,7 +249,7 @@ article.games h3 {
     font-size: 150%;
 }
 
-article.games small {
+article.games > ul > li small {
     font-size: 120%;
 }
 
@@ -283,6 +283,9 @@ article.games a:hover > img {
     }
     article.series {
         justify-content: center;
+    }
+    article.series small {
+        display: block;
     }
 }
 
