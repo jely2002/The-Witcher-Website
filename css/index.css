@@ -173,7 +173,8 @@ article.series {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0;
+    padding: 0;
+    margin-top: -2rem;
 }
 
 article.series > header {
@@ -209,12 +210,14 @@ article.series > header > button:hover {
 
 article.games > ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
 }
 
 article.games li {
     text-align: center;
+    margin: 0 1rem 3rem;
 }
 
 article.games a {
@@ -225,6 +228,33 @@ article.games a {
 article.games {
     width: 85%;
     margin: 0 auto;
+}
+
+article.games hr {
+    border-image-source: linear-gradient(
+            180deg
+            , rgba(255,255,255,1) 0%, rgb(154 154 154) 25%, rgb(154 154 154) 75%, rgba(255,255,255,1) 100%);
+    border-image-slice: 1;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+article.games img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-bottom: 1rem;
+}
+
+article.games h3 {
+    font-size: 150%;
+}
+
+article.games small {
+    font-size: 120%;
+}
+
+article.games a:hover > img {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 @media only screen and (max-width: 1180px) {
