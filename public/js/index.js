@@ -87,35 +87,14 @@ function slide(wrapper, items, prev, next) {
         if(index + 1 > slidesLength) adjustedIndex = 1;
         small = window.matchMedia("(max-width: 600px)").matches
         slideSize = small ? 320 : 500;
-        console.log(slideSize * adjustedIndex)
         items.style.left = -slideSize * adjustedIndex + "px";
     }
 
     window.matchMedia("(max-width: 600px)").addEventListener("change", point)
 
-    function checkURLIndex() {
-        let adjustedIndex = index + 1;
-        if(index + 1 > slidesLength) adjustedIndex = 1;
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlIndex = urlParams.get("characterIndex");
-        let indexDiff = adjustedIndex - urlIndex;
-        if(indexDiff !== 0) {
-            while(indexDiff !== 0) {
-                if (indexDiff > 0) {
-                    shiftSlide(1);
-                    indexDiff--;
-                } else {
-                    shiftSlide(-1);
-                    indexDiff++;
-                }
-            }
-        }
-    }
-
     function setData() {
         let adjustedIndex = index + 1;
         if(index + 1 > slidesLength) adjustedIndex = 1;
-       // window.history.pushState(null,null,window.location.search + "?characterIndex=" + adjustedIndex);
         document.getElementById("name").innerHTML = slides[adjustedIndex].dataset.name;
         document.getElementById("character-description").innerHTML = slides[adjustedIndex].dataset.description;
         document.getElementById("job").innerHTML = "<strong>Job:</strong> " + slides[adjustedIndex].dataset.job;
@@ -158,3 +137,11 @@ function slide(wrapper, items, prev, next) {
 }
 
 slide(slider, sliderItems, prev, next);
+
+document.getElementById("js__series").onclick = function () {
+    location.href = "series.html";
+};
+
+document.getElementById("js__shop").onclick = function () {
+    location.href = "shop.html";
+};

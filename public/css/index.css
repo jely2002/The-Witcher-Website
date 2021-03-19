@@ -165,7 +165,7 @@ article.characters > header, article.triple-cards > header {
     font-size: 180%;
 }
 
-article.series {
+article.series,  article.shop {
     background: url("../img/series-banner.png") center top no-repeat;
     background-size: cover;
     height: 300px;
@@ -178,22 +178,22 @@ article.series {
     margin-bottom: 3rem;
 }
 
-article.series > header {
+article.series > header,  article.shop > header {
     margin-left: 20%;
     text-shadow: 1px 1px 0.5px rgba(0,0,0,.4);
 }
 
-article.series > header > h2 {
+article.series > header > h2, article.shop > header > h2 {
     margin-bottom: .5rem;
 }
 
-article.series > header > button {
+article.series > header > button, article.shop > header > button {
     display: block;
     margin-top: 1rem;
     padding: .7rem;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.8);
     color: #FFF;
-    border: 1px solid rgba(0,0,0,.7);
+    border: 1px solid rgba(0,0,0,1);
     font-family: 'Open Sans', sans-serif;
     font-size: 110%;
     border-radius: 6px;
@@ -201,8 +201,8 @@ article.series > header > button {
     transition: background-color 200ms;
 }
 
-article.series > header > button:hover {
-    background-color: rgba(0,0,0,.6);
+article.series > header > button:hover,  article.shop > header > button:hover {
+    background-color: rgba(0,0,0,.9);
 }
 
 #character-description {
@@ -270,6 +270,10 @@ article.summary header {
     margin-bottom: 2rem;
 }
 
+article.summary .artwork {
+    margin-top: -2rem;
+}
+
 article.summary .artwork img {
     width: 600px;
 }
@@ -278,47 +282,13 @@ article.summary .text {
     font-size: 120%;
     flex: 1;
     margin-right: 5rem;
+    display: block;
 }
 
 article.shop {
-    background: #303740;
+    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url("../img/market.jpg") center 28% no-repeat;
+    filter: saturate(110%);
     background-size: cover;
-    height: 300px;
-    filter: brightness(140%) saturate(150%);
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 3rem;
-}
-
-article.shop > header {
-    margin-right: 20%;
-    margin-left: 10%;
-    text-shadow: 1px 1px 0.5px rgba(0,0,0,.4);
-}
-
-article.shop > header > h2 {
-    margin-bottom: .5rem;
-}
-
-article.shop > header > button {
-    display: block;
-    margin-top: 1rem;
-    padding: .7rem;
-    background-color: rgba(0,0,0,.4);
-    color: #FFF;
-    border: 1px solid rgba(0,0,0,.7);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 110%;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 200ms;
-}
-
-article.shop > header > button:hover {
-    background-color: rgba(0,0,0,.6);
 }
 
 @media only screen and (max-width: 1180px) {

@@ -6,3 +6,4 @@ window.onscroll = function () {
         nav.classList.remove("scrolled");
     }
 };
+
