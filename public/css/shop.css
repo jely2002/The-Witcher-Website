@@ -1,0 +1,257 @@
+.generic-header {
+    background: url("../img/banner.jpg") center 9% no-repeat;
+}
+
+
+.card > figure > img {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card > header {
+    padding: 0 1rem 1rem;
+}
+
+.card > h2 {
+    padding: 1rem 1rem .5rem;
+}
+
+.card {
+    flex-grow: 1;
+    border: 1px solid rgba(48,55,64,.2);
+    border-radius: 3px;
+}
+
+.card > figure {
+    padding: 1rem;
+}
+
+.card:nth-child(5) > figure {
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+.items {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+}
+
+.buy-button {
+    margin-top: 1rem;
+    padding: .7rem;
+    background-color: #303740;
+    border: none;
+    font-size: 110%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.buy-button:hover {
+    background-color: #23262f;
+}
+
+.filters {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.filter, #pay-btn {
+    margin: .7rem;
+    padding: .7rem;
+    background-color: #ffffff;
+    font-size: 110%;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #303740;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.filter.selected:hover {
+    background-color: #23262f;
+}
+
+.filter:not(.selected):hover, #pay-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.selected {
+    background-color: #303740;
+    color: #fff;
+    transition: 200ms;
+}
+
+.filter:nth-child(2) {
+    margin-left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#modal.fade-out {
+    animation: fade-out 300ms;
+}
+
+#modal-overlay.fade-out {
+    animation: fade-out 300ms;
+}
+
+#modal-overlay {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 51;
+}
+
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    border-radius: 3px;
+    z-index: 52;
+    padding: 2rem;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.show-overlay {
+    display: initial !important;
+    animation: fade-in 300ms;
+}
+
+.show-modal {
+    display: flex !important;
+    animation: fade-in 300ms;
+}
+
+#modal h2 {
+    width: 100%;
+    font-size: 180%;
+    margin-bottom: 2rem;
+}
+
+#modal label.required:after {
+    color: red;
+    content: " *";
+}
+
+#modal form {
+    margin-right: 5rem;
+    width: 50%;
+}
+
+#modal .price {
+    width: 300px;
+}
+
+#modal small {
+    display: inline-block;
+    width: 100%;
+}
+
+#modal .price p {
+    margin: .5rem;
+}
+
+#modal .price small {
+    margin: 1rem 0;
+}
+
+#close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 250%;
+}
+
+#pay-btn {
+    margin: 1rem auto;
+}
+
+input, select {
+    width: 100%;
+    display: block;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+label {
+    font-size: inherit;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card > figure > img {
+        height: 250px;
+    }
+    .items {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1899px) {
+    #modal form {
+        order: 2;
+        margin-right: 0;
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #modal form {
+        order: 2;
+        margin-right: 0;
+        width: 100% !important;
+    }
+    #modal {
+        width: 90vw;
+    }
+    input, select {
+        width: 90%;
+    }
+}
