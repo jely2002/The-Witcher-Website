@@ -1,3 +1,38 @@
 .generic-header {
     background: url("../img/game-banner.png") center 40% no-repeat;
 }
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section > header {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.trailer {
+    margin-bottom: 3rem;
+}
+
+.trailer iframe {
+    border: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .trailer iframe {
+        width: 352px;
+        height: 198px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .trailer iframe {
+        width: 200px;
+        height: 112px;
+    }
+}

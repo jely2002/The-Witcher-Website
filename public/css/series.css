@@ -1,3 +1,34 @@
 .generic-header {
     background: url("../img/series-banner1.jpg") center 25% no-repeat;
 }
+
+.trailer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 2rem;
+}
+
+.trailer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.description {
+    margin-bottom: 2rem;
+}
+
+.description h2 {
+    margin-bottom: 1rem;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
