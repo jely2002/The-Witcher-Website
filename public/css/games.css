@@ -15,6 +15,18 @@ section {
     margin-bottom: 2rem;
 }
 
+main p {
+    margin: 1rem 0;
+}
+
+main h2 {
+    font-size: 250%;
+}
+
+main small {
+    font-size: 150%;
+}
+
 .trailer {
     margin-bottom: 3rem;
 }
