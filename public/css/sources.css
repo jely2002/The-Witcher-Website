@@ -1,0 +1,31 @@
+main {
+    margin: 5rem auto 2rem;
+    width: 95%;
+}
+
+main h1 {
+    font-size: 220%;
+}
+
+main ul {
+    font-size: 120%;
+    margin-left: 2rem;
+}
+
+main li {
+    margin: .5rem;
+}
+
+main h2 {
+    margin-top: 2rem;
+}
+
+#navbar {
+    background-color: rgba(0,0,0,1);
+}
+
+@media only screen and (max-width: 610px) {
+    main {
+        margin: 8rem auto 2rem;
+    }
+}
