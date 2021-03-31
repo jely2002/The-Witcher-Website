@@ -20,6 +20,10 @@ figure {
     margin-bottom: 1rem;
 }
 
+span {
+    text-decoration: line-through;
+}
+
 main {
     margin-top: calc(1rem + 90px);
     display: flex;
