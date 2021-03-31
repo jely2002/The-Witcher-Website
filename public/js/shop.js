@@ -55,7 +55,7 @@ window.onload = function() {
 
     form.addEventListener('submit', function(e) {
        e.preventDefault();
-       alert('Payment disabled, no backend found.')
+       alert('Payment disabled, no backend found.');
     });
 
     close.onclick = function() { closeModal(); };
@@ -65,14 +65,14 @@ window.onload = function() {
         btn.onclick = function() {
             const card = this.closest(".card");
             openModal(card.dataset.title, card.dataset.price);
-        }
+        };
     }
 
     function openModal(title, price) {
         overlay.classList.add("show-overlay");
         modal.classList.add("show-modal");
-        item.innerHTML = `${title} (incl. VAT): $${price}`
-        total.innerHTML = `Total: $${parseInt(price) + 10}`
+        item.innerHTML = title + " (incl. VAT): $" + price;
+        total.innerHTML = "Total: $" + (parseFloat(price) + 10);
     }
 
     function closeModal() {

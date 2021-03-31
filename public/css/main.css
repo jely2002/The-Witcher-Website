@@ -30,7 +30,7 @@ p {
 }
 
 nav .menu img {
-    filter: invert();
+    filter: invert(1);
     margin-top: 10px;
 }
 

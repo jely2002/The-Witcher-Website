@@ -26,7 +26,7 @@ body > header > section > h1 {
 }
 
 body > header > section > img {
-    filter: invert() drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: invert(1) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
 .slider {

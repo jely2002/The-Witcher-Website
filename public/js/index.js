@@ -34,8 +34,8 @@ function slide(wrapper, items, prev, next) {
     items.addEventListener('touchmove', dragAction);
 
     // Click events
-    prev.addEventListener('click', function () { shiftSlide(-1) });
-    next.addEventListener('click', function () { shiftSlide(1) });
+    prev.addEventListener('click', function () { shiftSlide(-1); });
+    next.addEventListener('click', function () { shiftSlide(1); });
 
     // Transition events
     items.addEventListener('transitionend', checkIndex);
@@ -85,12 +85,12 @@ function slide(wrapper, items, prev, next) {
     function point() {
         let adjustedIndex = index + 1;
         if(index + 1 > slidesLength) adjustedIndex = 1;
-        small = window.matchMedia("(max-width: 600px)").matches
+        small = window.matchMedia("(max-width: 600px)").matches;
         slideSize = small ? 320 : 500;
         items.style.left = -slideSize * adjustedIndex + "px";
     }
 
-    window.matchMedia("(max-width: 600px)").addEventListener("change", point)
+    window.matchMedia("(max-width: 600px)").addEventListener("change", point);
 
     function setData() {
         let adjustedIndex = index + 1;
