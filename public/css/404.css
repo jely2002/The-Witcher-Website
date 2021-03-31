@@ -1,0 +1,28 @@
+#navbar {
+    background-color: rgba(0,0,0,1);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 250%;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+main {
+    margin-top: calc(1rem + 90px);
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
