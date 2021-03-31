@@ -23,6 +23,11 @@ main h2 {
     font-size: 250%;
 }
 
+main h3 {
+    margin-bottom: 1rem;
+    font-size: 150%;
+}
+
 main small {
     font-size: 150%;
 }

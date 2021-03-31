@@ -22,6 +22,11 @@
     margin-bottom: 2rem;
 }
 
+main h2 {
+    font-size: 250%;
+    margin-bottom: 1rem;
+}
+
 main {
     width: 80%;
     margin: 0 auto;
