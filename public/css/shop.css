@@ -251,7 +251,17 @@ label {
     #modal {
         width: 90vw;
     }
+    #modal .price {
+        display: none;
+    }
     input, select {
         width: 90%;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    input, select {
+        margin-bottom: .6rem;
+        margin-top: .3rem;
     }
 }
