@@ -122,11 +122,6 @@ footer {
 
 footer > ul > li {
     margin: 0 1rem;
-    transition: 200ms ease-in-out;
-}
-
-footer > ul > li:hover {
-    filter: brightness(60%);
 }
 
 footer > *:nth-child(2) {
