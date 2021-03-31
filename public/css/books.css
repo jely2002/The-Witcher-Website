@@ -1,3 +1,33 @@
 .generic-header {
     background: url("../img/books-banner.jpg") center 9% no-repeat;
 }
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section > header {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+main h2 {
+    font-size: 250%;
+}
+
+main small {
+    font-size: 150%;
+}
+
+main li {
+    font-size: 120%;
+    margin: 1rem auto 1rem 2rem;
+}
