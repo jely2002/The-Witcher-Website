@@ -5,6 +5,11 @@
 h1 {
     margin-bottom: 1rem;
     font-size: 250%;
+
+}
+
+a {
+    color: #000;
 }
 
 section {
