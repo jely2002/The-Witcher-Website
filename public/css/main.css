@@ -25,6 +25,10 @@ main {
     width: 100%;
 }
 
+p {
+    font-size: 120%;
+}
+
 nav .menu img {
     filter: invert();
     margin-top: 10px;
