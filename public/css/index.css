@@ -50,6 +50,7 @@ body > header > section > img {
 .wrapper img {
     image-rendering: pixelated;
     margin: 0 auto;
+    height: 100%;
 }
 
 .slides {
